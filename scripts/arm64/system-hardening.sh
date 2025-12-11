@@ -131,8 +131,6 @@ APT::Periodic::Update-Package-Lists "1";
 APT::Periodic::Unattended-Upgrade "1";
 EOF
 
-aideinit || true
-
 systemctl enable auditd  >/dev/null 2>&1 || true
 systemctl enable sysstat >/dev/null 2>&1 || true
 systemctl enable acct    >/dev/null 2>&1 || true

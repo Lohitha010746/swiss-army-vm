@@ -130,7 +130,11 @@ build {
       "../scripts/arm64/system-hardening.sh",
       "../scripts/arm64/setup-tool-updates.sh"
     ]
-
     
+  }
+
+  provisioner "file" {
+    source = "../scripts/arm64/virustotal.sh"
+    destination = "/home/packer/Downloads/virustotal.sh"
   }
 }
